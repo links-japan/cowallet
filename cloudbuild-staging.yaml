@@ -44,7 +44,7 @@ steps:
   args:
   - clone
   - -b
-  - master
+  - feat/deploy-cowallet-staging
   - --single-branch
   - git@github.com:links-japan/Charts.git
   volumes:
