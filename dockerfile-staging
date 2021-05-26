@@ -6,7 +6,7 @@ COPY . .
 
 ENV APP_ENV="prod"
 ENV API_BASE="https://proxy.getlinks.jp"
-ENV OAUTH_URL="https://oauth.getlinks.jp/"
+ENV OAUTH_URL="https://oauth.getlinks.jp"
 ENV CLIENT_ID="5e4af079-5f4a-42e1-a1b7-38081d311cc6"
 
 RUN yarn
