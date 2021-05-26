@@ -53,7 +53,7 @@ steps:
 
 - id: 'deploy backend to the cluster' 
   name: 'alpine/helm:3.3.0-rc.2'
-  args: ['-n','staging','upgrade','--set','cowallet.image.shortsha=$SHORT_SHA','--set','cowallet.image.shortsha=$SHORT_SHA','-f','/workspace/Charts/links/values-staging.yaml','staging-links','/workspace/Charts/links']
+  args: ['-n','staging','upgrade','--set','cowallet.frontend.image.shortsha=$SHORT_SHA','-f','/workspace/Charts/links/values-staging.yaml','staging-links','/workspace/Charts/links']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=asia-east1-a'
   - 'CLOUDSDK_CONTAINER_CLUSTER=links-cluster-staging'
