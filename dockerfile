@@ -5,7 +5,7 @@ WORKDIR /cowallet
 COPY . .
 
 ENV APP_ENV="prod"
-ENV API_BASE="https://proxy.getlinks.jp"
+ENV API_BASE="https://api.mixin.one"
 ENV OAUTH_URL="https://oauth.getlinks.jp"
 ENV CLIENT_ID="0db25065-35f2-4ab8-8046-788dc844e003"
 
