@@ -4,10 +4,11 @@ WORKDIR /cowallet
 
 COPY . .
 
-ENV APP_ENV="prod"
-ENV API_BASE="https://proxy.getlinks.jp"
+ENV APP_ENV="dev"
+ENV API_BASE="https://api.mixin.one"
 ENV OAUTH_URL="https://oauth.getlinks.jp"
 ENV CLIENT_ID="5e4af079-5f4a-42e1-a1b7-38081d311cc6"
+ENV INCLUDE_ASSET_IDS="c6d0c728-2624-429b-8e0d-d9d19b6592fa"
 
 RUN yarn
 RUN yarn generate
